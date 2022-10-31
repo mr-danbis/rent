@@ -3,24 +3,31 @@
 @@include('../blocks/head/head.html')
 
 <body>
-  <div class="wrapper">
+    <div class="wrapper">
 
-    @@include('../blocks/header/header.html')
-    <!-- /.header --> 
+        @@include('../blocks/header/header.html')
+        <!-- /.header -->
 
-    <main class="main">
-      
-    </main>
-    <!-- /.main -->
+        <main class="main">
+            <div class="container">
+                <div class="account">
+                    @@include('../blocks/account/account-navigation/account-navigation.html')
+                    <!-- /.account-navigation -->
+                    @@include('../blocks/account/account-content/account-content.html')
+                    <!-- /.account-content -->
+                </div>
+            </div>
+        </main>
+        <!-- /.main -->
 
 
-    @@include('../blocks/footer/footer.html')
-    <!-- /.footer -->
-      
-  </div>
-  <!-- /.wrapper -->
+        @@include('../blocks/footer/footer.html')
+        <!-- /.footer -->
 
-  <script src="js/main.min.js"></script>
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

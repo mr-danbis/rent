@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
   height: 100%;
   color: #051B1F;
-  ;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .box {
@@ -26,6 +26,11 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 67%;
   margin: 0 auto;
+}
+
+.account{
+    display: flex;
+    justify-content: space-between;
 }

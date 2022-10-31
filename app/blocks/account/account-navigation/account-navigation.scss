@@ -1,0 +1,54 @@
+.account-navigation {
+    width: 300px;
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        color: #333333;
+        padding-left: 25px;
+
+        &-photo {
+            margin-right: 18px;
+        }
+
+        &-name {
+            @include adaptiv-font(18, 15);
+            font-weight: 400;
+        }
+    }
+
+    &__link {
+        display: flex;
+        color: #333333;
+        padding: 25px;
+        transition: all .3s;
+        border-radius: 5px;
+
+        svg path,
+        rect {
+            transition: all .3s;
+        }
+
+        &:hover {
+            font-weight: 600;
+            color: #FFFFFF;
+            background-color: #FF5E00;
+        }
+
+        &:hover svg {
+            path {
+                stroke: #FFFFFF;
+            }
+        }
+
+        &-img {
+            margin-right: 15px;
+        }
+
+        &-title {
+            @include adaptiv-font(18, 15);
+            font-weight: 400;
+        }
+    }
+}
