@@ -5,11 +5,11 @@
         align-items: start;
         margin-bottom: 30px;
         font-weight: 400;
-        font-size: 18px;
+        @include adaptiv-font(18,15);
         line-height: 25px;
         border-radius: 5px;
 
-        &__info{
+        &-info{
             width: 35%;
         }
 
@@ -27,5 +27,20 @@
 
         }
 
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .account-content{
+        &__account{
+            flex-direction: column;
+            &-info, &-rules{
+                width: 100%;
+            }
+            &-info{
+                margin-bottom: 20px;
+            }
+        }
     }
 }

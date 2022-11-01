@@ -21,8 +21,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const slider = new Slider();
 
     slider.addSlider(".slider", {
-        items: 2,
         margin: 30,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1100: {
+                items: 2
+            },
+            1300: {
+                items: 1
+            },
+            1500: {
+                items: 2,
+            }
+        }
     });
+
 
 });
