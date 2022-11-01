@@ -1,0 +1,393 @@
+<section class="account-content__inner account-content__inner-visible">
+    <div class="account-content__breadcrumbs">
+        <a class="account-content__breadcrumbs-link" href="">Личный кабинет</a>
+        <a class="account-content__breadcrumbs-link" href="/">Мои объявления</a>
+        <a class="account-content__breadcrumbs-link account-content__breadcrumbs-link--active"
+            href="new-ad_page.html">Новое объявление</a>
+    </div>
+
+    <div class="account-content__new">
+        <h1 class="account-content__title">НОВОЕ ОБЪЯВЛЕНИЕ</h1>
+    </div>
+
+    <div class="account-content__new-nav">
+        <h3 class="account-content__new-item account-content__new-item--active">Общие параметры</h3>
+        <h3 class="account-content__new-item">Контакты</h3>
+        <h3 class="account-content__new-item">Адрес</h3>
+        <h3 class="account-content__new-item">Параметры</h3>
+        <h3 class="account-content__new-item">Цена</h3>
+        <h3 class="account-content__new-item">Фото</h3>
+    </div>
+
+
+    <div class="account-content__new-blocks">
+        <div class="account-content__new-block">
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="active">Активно</label>
+                            <input class="form__input" type="text" name="active" id="active">
+                        </div>
+                        <div class="form__item form__item-date">
+                            <label class="form__label" for="ad-date">Дата объявления</label>
+                            <input class="form__input" type="text" name="ad-date" id="ad-date"
+                                onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="01.01.2000">
+                        </div>
+                        <div class="form__item form__item-date">
+                            <label class="form__label" for="relevant">Актуально до</label>
+                            <input class="form__input" type="text" name="relevant" id="relevant"
+                                onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="01.01.2023">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="title">Название</label>
+                            <input class="form__input" type="text" name="title" id="title">
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="type">Тип объявления</label>
+                            <select class="form__select" name="type" id="type">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="category">Категория комерческого объекта</label>
+                            <select class="form__select" name="category" id="category">
+                                <option value="Выберите категорию">Выберите категорию</option>
+                                <option value="Выберите категорию 2">Выберите категорию 2</option>
+                                <option value="Выберите категорию 3">Выберите категорию 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="status">Статус собственности</label>
+                            <select class="form__select" name="status" id="status">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="account-content__btn">Продолжить</button>
+
+        </div>
+
+        <div class="account-content__new-block account-content__new-block--1column">
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="org-title">Название организации</label>
+                            <input class="form__input" type="text" name="org-title" id="org-title"
+                                placeholder="ОАО “Компания”">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="contact">Контактное лицо</label>
+                            <input class="form__input" type="text" name="contact" id="contact"
+                                placeholder="Иванов Иван Иванович">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="phone">Телефон</label>
+                            <input class="form__input" type="text" name="phone" id="phone" placeholder="+375...">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="account-content__btns">
+                <button class="account-content__btn">Назад</button>
+                <button class="account-content__btn">Продолжить</button>
+            </div>
+        </div>
+
+        <div class="account-content__new-block">
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="country">Страна</label>
+                            <select class="form__select" name="country" id="country">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="city">Город</label>
+                            <select class="form__select" name="city" id="city">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="region">Регион</label>
+                            <select class="form__select" name="region" id="region">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="address">Адрес</label>
+                            <select class="form__select" name="address" id="address">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="building">Здание</label>
+                            <select class="form__select" name="building" id="building">
+                                <option value="Выберите категорию">Выберите категорию</option>
+                                <option value="Выберите категорию 2">Выберите категорию 2</option>
+                                <option value="Выберите категорию 3">Выберите категорию 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="floor">Этаж</label>
+                            <input class="form__input" type="text" name="floor" id="floor" placeholder="12">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="area">Район</label>
+                            <select class="form__select" name="area" id="area">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="metro">Метро</label>
+                            <select class="form__select" name="metro" id="metro">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="account-content__new-map">
+                <h3 class="account-content__new-map_title">
+                    Месторосположение на карте
+                </h3>
+                <div class="account-content__new-map_yandex">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaabeaa6302b16b360cc17d357801462798f7afe5475f450390b8bd8f8f1538db&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false">
+                    </script>
+                </div>
+
+            </div>
+
+
+            <div class="account-content__btns">
+                <button class="account-content__btn">Назад</button>
+                <button class="account-content__btn">Продолжить</button>
+            </div>
+
+        </div>
+
+        <div class="account-content__new-block">
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="flat-category">Категория</label>
+                            <select class="form__select" name="flat-category" id="flat-category">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="rooms">Комнаты</label>
+                            <select class="form__select" name="rooms" id="rooms">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="room-area">Площадь комнат</label>
+                            <input class="form__input" type="text" name="room-area" id="room-area" placeholder="26 М²">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="room-count">Количество комнат</label>
+                            <select class="form__select" name="room-count" id="room-count">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="room-type">Тип комнат</label>
+                            <select class="form__select" name="room-type" id="room-type">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="features-non-residential">Особенности нежилого
+                                помещения</label>
+                            <input class="form__input" type="text" name="features-non-residential"
+                                id="features-non-residential">
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="total-area">Общая площадь</label>
+                            <input class="form__input" type="text" name="total-area" id="total-area"
+                                placeholder="172 М²">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="telephone-lines">Количество телефонных линий</label>
+                            <input class="form__input" type="text" name="telephone-lines" id="telephone-lines"
+                                placeholder="3">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="business-center">Класс бизнес-центра</label>
+                            <select class="form__select" name="business-center" id="business-center">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="features">Особенности</label>
+                            <select class="form__select" name="features" id="features">
+                                <option value="Не выбрано">Не выбрано</option>
+                                <option value="Не выбрано 2">Не выбрано 2</option>
+                                <option value="Не выбрано 3">Не выбрано 3</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="description">Описание</label>
+                            <input class="form__input" type="text" name="description" id="description">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="best">Лучшее</label>
+                            <input class="form__input" type="text" name="best" id="best">
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="account-content__btns">
+                <button class="account-content__btn">Назад</button>
+                <button class="account-content__btn">Продолжить</button>
+            </div>
+
+        </div>
+
+        <div class="account-content__new-block">
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="month-price">Цена за месяц</label>
+                            <input class="form__input" type="text" name="month-price" id="month-price"
+                                placeholder="5620 BYN">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="meter-price">Цена за метр</label>
+                            <input class="form__input" type="text" name="meter-price" id="meter-price"
+                                placeholder="138 BYN">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__label" for="currency">Валюта</label>
+                            <select class="form__select" name="currency" id="currency">
+                                <option value="BYN">BYN</option>
+                                <option value="USD">USD</option>
+                                <option value="RUB">RUB</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__item">
+                            <label class="form__label" for="period-price">Цена за период</label>
+                            <div class="form__group">
+                                <div class="form__group-item">
+                                    <label class="form__label" for="day">День</label>
+                                    <input value="День" type="radio" name="period-price-value" id="day" checked>
+                                </div>
+                                <div class="form__group-item">
+                                    <label class="form__label" for="month">Месяц</label>
+                                    <input value="Месяц" type="radio" name="period-price-value" id="month">
+                                </div>
+                            </div>
+                            <input class="form__input" type="text" name="period-price" id="period-price"
+                                placeholder="38 BYN">
+                        </div>
+
+                        <div class="form__item">
+                            <label class="form__label" for="price-for">Цена за</label>
+                            <div class="form__group">
+                                <div class="form__group-item">
+                                    <label class="form__label" for="m²">М²</label>
+                                    <input value="М²" type="radio" name="price-for-value" id="m²" checked>
+                                </div>
+                                <div class="form__group-item">
+                                    <label class="form__label" for="weaving">Сотка</label>
+                                    <input value="Сотка" type="radio" name="price-for-value" id="weaving">
+                                </div>
+                                <div class="form__group-item">
+                                    <label class="form__label" for="hectare">Гектар</label>
+                                    <input value="Гектар" type="radio" name="price-for-value" id="hectare">
+                                </div>
+                            </div>
+                            <input class="form__input" type="text" name="price-for" id="price-for" placeholder="38 BYN">
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="account-content__btns">
+                <button class="account-content__btn">Назад</button>
+                <button class="account-content__btn">Продолжить</button>
+            </div>
+
+        </div>
+
+        <div class="account-content__new-block account-content__new-block--active">
+
+            <div class="account-content__new-photo">
+                <div class="account-content__new-photo_btn">
+                    <input class="account-content__new-photo_input" type="file" name="file" id="file" accept=".png, .jpg, .jpeg, .mp4, .webp, .svg, .raw">
+                    <label class="account-content__new-photo_label account-content__btn" for="file">Добавить фотографии
+                        <div class="account-content__new-photo_icon">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 17.5H15C15.2652 17.5 15.5196 17.6054 15.7071 17.7929C15.8946 17.9804 16 18.2348 16 18.5C16 18.7652 15.8946 19.0196 15.7071 19.2071C15.5196 19.3946 15.2652 19.5 15 19.5H1C0.734784 19.5 0.48043 19.3946 0.292893 19.2071C0.105357 19.0196 0 18.7652 0 18.5C0 18.2348 0.105357 17.9804 0.292893 17.7929C0.48043 17.6054 0.734784 17.5 1 17.5ZM9 11.675L12.243 8.433L13.657 9.847L8 15.504L2.343 9.847L3.757 8.433L7 11.675V0.5H9V11.675Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+
+                <p class="account-content__new-photo_text">
+                    Или перетащите сюда
+                </p>
+
+            </div>
+
+            <div class="account-content__btns">
+                <button class="account-content__btn">Назад</button>
+                <button class="account-content__btn">Продолжить</button>
+            </div>
+
+        </div>
+
+    </div>
+</section>

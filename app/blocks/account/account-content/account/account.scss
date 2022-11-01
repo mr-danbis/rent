@@ -1,0 +1,31 @@
+.account-content{
+    &__account {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 5px;
+
+        &__info{
+            width: 35%;
+        }
+
+        &-rules {
+            width: 60%;
+            padding: 23px 30px;
+            background-color: #FFFFFF;
+            a {
+                color: #308BDE;
+                transition: all .3s;
+                &:hover {
+                    opacity: .5;
+                }
+            }
+
+        }
+
+    }
+}

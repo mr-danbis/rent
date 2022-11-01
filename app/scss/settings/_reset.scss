@@ -13,6 +13,17 @@ ol[class] {
   padding: 0;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 2;
+}
+
+select{
+    appearance: none;
+    background: url(/images/icons/arrow-bottom.svg) no-repeat right;
+    background-position-x: calc(100% - 21px);
+}
+
 input::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;

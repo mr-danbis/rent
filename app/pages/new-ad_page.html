@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../blocks/head/head.html')
+
+<body>
+    <div class="wrapper">
+
+        @@include('../blocks/header/header.html')
+        <!-- /.header -->
+
+        <main class="main">
+            <div class="container">
+                <div class="account">
+                    @@include('../blocks/account/account-navigation/account-navigation.html')
+                    <!-- /.account-navigation -->
+                    <section class="account-content">
+
+                        @@include('../blocks/account/account-content/new/new.html')
+
+                    </section>
+                    <!-- /.account-content -->
+                </div>
+            </div>
+        </main>
+        <!-- /.main -->
+
+
+        @@include('../blocks/footer/footer.html')
+        <!-- /.footer -->
+
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

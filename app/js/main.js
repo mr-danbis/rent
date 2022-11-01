@@ -7,6 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     resizeMainPadding();
 
-    
+    class Slider {
+        constructor(owlElement, owlOptions) {
+            this.owlElement = owlElement;
+            this.owlOptions = owlOptions;
+        }
+
+        addSlider(owlElement, owlOptions) {
+            $(owlElement).owlCarousel(owlOptions);
+        }
+    }
+
+    const slider = new Slider();
+
+    slider.addSlider(".slider", {
+        items: 2,
+        margin: 30,
+    });
 
 });

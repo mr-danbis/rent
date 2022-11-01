@@ -13,7 +13,17 @@
                 <div class="account">
                     @@include('../blocks/account/account-navigation/account-navigation.html')
                     <!-- /.account-navigation -->
-                    @@include('../blocks/account/account-content/account-content.html')
+                    <section class="account-content">
+
+                        @@include('../blocks/account/account-content/account/account.html')
+
+                        @@include('../blocks/account/account-content/data/data.html')
+
+                        @@include('../blocks/account/account-content/my/my.html')
+
+                        @@include('../blocks/account/account-content/favourites/favourites.html')
+
+                    </section>
                     <!-- /.account-content -->
                 </div>
             </div>
@@ -27,6 +37,9 @@
     </div>
     <!-- /.wrapper -->
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 
