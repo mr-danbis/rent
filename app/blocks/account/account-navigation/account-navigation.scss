@@ -16,46 +16,24 @@
             @include adaptiv-font(18, 15);
             font-weight: 400;
         }
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__item {
-
-        &:last-child {
-            .account-navigation {
-                &__link:hover svg {
-                    path {
-                        fill: #fff;
-                    }
-                }
-            }
-        }
-
-        &--active {
-            a {
-                font-weight: 600;
-                color: #FFFFFF;
-                background-color: #FF5E00;
-            }
-
-            svg {
-                path {
-                    stroke: #FFFFFF;
-                    fill: #FFFFFF;
-                }
-
-                rect {
-                    fill: #FFFFFF;
-                }
-            }
-        }
-    }
-
-    &__link {
+        @include adaptiv-font(18, 15);
+        font-weight: 400;
         border-radius: 5px;
-        display: flex;
-        color: #333333;
         padding: 25px;
+        color: #333333;
+        display: flex;
         transition: all .3s;
+
+        &-img {
+            margin-right: 15px;
+        }
 
         svg path,
         rect {
@@ -63,30 +41,51 @@
         }
 
         &:hover {
-            font-weight: 600;
+            cursor: pointer;
             color: #FFFFFF;
             background-color: #FF5E00;
-        }
 
-        &:hover svg {
-            path {
-                stroke: #FFFFFF;
+            svg {
+                path {
+                    stroke: #FFFFFF;
+                }
+                rect {
+                    fill: #FFFFFF;
+                }
             }
-
-            rect {
-                fill: #FFFFFF;
+        }
+        
+        &:last-child:hover {
+            svg {
+                path {
+                    fill: #fff;
+                }
             }
         }
 
-        &-img {
-            margin-right: 15px;
+        &--active {
+            color: #FFFFFF;
+            background-color: #FF5E00;
+
+            svg {
+                path {
+                    stroke: #FFFFFF;
+                }
+            }
         }
 
-        &-title {
-            @include adaptiv-font(18, 15);
-            font-weight: 400;
+        &:last-child.account-navigation__item--active{
+            svg {
+                path {
+                    fill: #FFFFFF;
+                }
+                rect {
+                    fill: #FFFFFF;
+                }
+            }
         }
     }
+
 }
 
 @media (max-width: 1300px) {

@@ -491,58 +491,60 @@ body {
   );
   font-weight: 400;
 }
-.account-navigation__item:last-child .account-navigation__link:hover svg path {
-  fill: #fff;
+.account-navigation__user:hover {
+  cursor: pointer;
 }
-.account-navigation__item--active a {
-  font-weight: 600;
-  color: #FFFFFF;
-  background-color: #FF5E00;
-}
-.account-navigation__item--active svg path {
-  stroke: #FFFFFF;
-  fill: #FFFFFF;
-}
-.account-navigation__item--active svg rect {
-  fill: #FFFFFF;
-}
-.account-navigation__link {
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #333333;
-  padding: 25px;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.account-navigation__link svg path,
-.account-navigation__link rect {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.account-navigation__link:hover {
-  font-weight: 600;
-  color: #FFFFFF;
-  background-color: #FF5E00;
-}
-.account-navigation__link:hover svg path {
-  stroke: #FFFFFF;
-}
-.account-navigation__link:hover svg rect {
-  fill: #FFFFFF;
-}
-.account-navigation__link-img {
-  margin-right: 15px;
-}
-.account-navigation__link-title {
+.account-navigation__item {
   font-size: calc(
     15px + 3 *
       ((100vw - 320px) / 1600)
   );
   font-weight: 400;
+  border-radius: 5px;
+  padding: 25px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.account-navigation__item-img {
+  margin-right: 15px;
+}
+.account-navigation__item svg path,
+.account-navigation__item rect {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.account-navigation__item:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #FF5E00;
+}
+.account-navigation__item:hover svg path {
+  stroke: #FFFFFF;
+}
+.account-navigation__item:hover svg rect {
+  fill: #FFFFFF;
+}
+.account-navigation__item:last-child:hover svg path {
+  fill: #fff;
+}
+.account-navigation__item--active {
+  color: #FFFFFF;
+  background-color: #FF5E00;
+}
+.account-navigation__item--active svg path {
+  stroke: #FFFFFF;
+}
+.account-navigation__item:last-child.account-navigation__item--active svg path {
+  fill: #FFFFFF;
+}
+.account-navigation__item:last-child.account-navigation__item--active svg rect {
+  fill: #FFFFFF;
 }
 
 @media (max-width: 1300px) {
@@ -566,7 +568,7 @@ body {
 .account-content__inner {
   display: none;
 }
-.account-content__inner-visible {
+.account-content__inner--visible {
   display: block;
 }
 .account-content__breadcrumbs {
