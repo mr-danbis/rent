@@ -1,49 +1,53 @@
 html,
 body {
-  overflow-x: hidden;
-  height: 100%;
-  color: #051B1F;
-  font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    color: #051B1F;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .box {
-  height: 100vh;
-  width: 100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.opacity {
+    opacity: .3;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 .footer {
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
 .container {
-  width: 67%;
-  margin: 0 auto;
+    width: 67%;
+    margin: 0 auto;
 }
 
-.account{
+.account {
     display: flex;
     justify-content: space-between;
 }
 
 
 @media (max-width: 1300px) {
-    .container{
+    .container {
         width: 90%;
     }
 }
 
 @media (max-width: 850px) {
-    .account{
+    .account {
         flex-direction: column;
     }
 }

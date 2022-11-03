@@ -327,7 +327,7 @@
                 <div class="form__item form__item--password">
                     <label class="form__label" for="password">Пароль</label>
                     <input class="form__input" type="password" value="12345" name="password" id="password">
-                    <button class="form__change-password">Сменить пароль</button>
+                    <span class="form__change-password">Сменить пароль</span>
                 </div>
             </div>
             <div class="form__column">
@@ -574,6 +574,30 @@
         </main>
         <!-- /.main -->
 
+        <section class="modal">
+    <form class="modal__form" action="">
+        <div class="modal__form-inner">
+            <div class="modal__item form__item--password">
+                <label class="form__label modal__item-label" for="current-password">Текущий пароль</label>
+                <input class="form__input modal__item-input" type="password" name="current-password" id="current-password" value="123456789012">
+            </div>
+            <div class="modal__item form__item--password">
+                <label class="form__label modal__item-label" for="new-password">Новый пароль</label>
+                <input class="form__input modal__item-input" type="password" name="new-password" id="new-password">
+            </div>
+            <div class="modal__item form__item--password">
+                <label class="form__label modal__item-label" for="repeat-password">Повторите пароль</label>
+                <input class="form__input modal__item-input" type="password" name="repeat-password" id="repeat-password">
+            </div>
+        </div>
+        <button class="account-content__btn modal__btn">Изменить пароль</button>
+    </form>
+
+    <button class="modal__btn-close">
+        <img src="/images/icons/close.svg" alt="Закрыть окно">
+    </button>
+</section>
+        <!-- /.modal -->
 
         <footer class="footer">
 
